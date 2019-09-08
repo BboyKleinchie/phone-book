@@ -56,3 +56,15 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+-- -----------------------------------------------------
+-- INSERT TEST DATA
+-- -----------------------------------------------------
+INSERT INTO phonebookentry.phonebook
+VALUES("0d5ef6a8-f733-4ee0-aeb3-de187c91d417", "myFirstPhoneBook");
+
+INSERT INTO phonebookentry.entry 
+VALUES("9e4a5bfb-5bac-4ce3-8984-54f36285c48b", "ADAM", "0711111111", "0d5ef6a8-f733-4ee0-aeb3-de187c91d417");
+
+INSERT INTO phonebookentry.entry 
+VALUES("02e19f2b-2f5b-403c-a14a-074ffa7ea6c6", "EVE", "0722222222", "0d5ef6a8-f733-4ee0-aeb3-de187c91d417");

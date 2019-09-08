@@ -14,8 +14,6 @@ namespace phone_book_api.Extensions
         {
             services.AddCors(options => {
                 options.AddPolicy("CorsPolicy",
-                    // builder => builder.WithOrigins("http://localhost:4200/")
-                    //     .WithMethods("GET", "POST")
                     builder => builder.AllowAnyOrigin()
                         .WithMethods("GET", "POST")    
                         .AllowAnyHeader()
